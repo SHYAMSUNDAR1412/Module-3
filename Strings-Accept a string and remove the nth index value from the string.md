@@ -15,8 +15,25 @@ To write a Python program that accepts a string and removes the character at a s
 8. Print the final result.
 
 ## 💻 Program
-Add Code Here
+```
+def remove_nth_index_char(s, n):
+    if n < 0 or n >= len(s):
+        print("Invalid index!")
+        return s
+    return s[:n] + s[n+1:]
+
+
+input_string = input()
+index_to_remove = int(input())
+
+result = remove_nth_index_char(input_string, index_to_remove)
+print("String after removing character at index", index_to_remove, ":", result)
+```
 
 ## Output
 
+![image](https://github.com/user-attachments/assets/ae982970-f52b-4ccc-a49d-ea4eb24a50f2)
+
+
 ## Result
+Thus the program has been successfully executed
